@@ -2,7 +2,7 @@
 FROM node:14
 
 # Establece el directorio de trabajo en la aplicación
-WORKDIR /src/index.js
+WORKDIR src/index.js
 
 # Copia los archivos de la aplicación al directorio de trabajo
 COPY package*.json ./
@@ -15,4 +15,4 @@ RUN npm install
 EXPOSE 8000
 
 # Comando para ejecutar la aplicación
-CMD ["node", "app.js"]
+CMD ["node", "src/index.js"]
