@@ -2,7 +2,7 @@
 FROM node:14
 
 # Establece el directorio de trabajo en la aplicación
-WORKDIR /usr/src/app
+WORKDIR /src/routes/index,js
 
 # Copia los archivos de la aplicación al directorio de trabajo
 COPY package*.json ./
